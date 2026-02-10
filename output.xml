@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.3 on win32)" generated="2026-02-08T19:20:15.062661" rpa="false" schemaversion="5">
+<suite id="s1" name="Aprendizado" source="C:\Users\pedro\OneDrive\Área de Trabalho\aulaRobot\aprendizado.robot">
+<test id="s1-t1" name="Cenario 1: teste de abrir site google" line="18">
+<kw name="abrir site do google">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-08T19:20:15.588140" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/search?q=google&amp;oq=google&amp;gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg7MgYIAhBFGDsyBggDEEUYPDIGCAQQRRg8MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEHNTkyajBqN6gCCLACAfEFnzwVwAdjC40&amp;sourceid=chrome&amp;ie=UTF-8'.</msg>
+<arg>https://www.google.com/search?q=google&amp;oq=google&amp;gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg7MgYIAhBFGDsyBggDEEUYPDIGCAQQRRg8MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEHNTkyajBqN6gCCLACAfEFnzwVwAdjC40&amp;sourceid=chrome&amp;ie=UTF-8</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-08T19:20:15.587803" elapsed="3.319495"/>
+</kw>
+<status status="PASS" start="2026-02-08T19:20:15.586857" elapsed="3.321054"/>
+</kw>
+<kw name="pausar por 5 segundos">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-08T19:20:23.912482" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-08T19:20:18.910390" elapsed="5.002421"/>
+</kw>
+<status status="PASS" start="2026-02-08T19:20:18.909134" elapsed="5.003947"/>
+</kw>
+<status status="PASS" start="2026-02-08T19:20:15.585646" elapsed="8.328238"/>
+</test>
+<test id="s1-t2" name="Cenario 2: teste de abrir linkedIn" line="21">
+<kw name="abrir o site do linkedIn">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-08T19:20:23.917359" level="INFO">Opening browser 'chrome' to base url 'https://www.linkedin.com/in/pedro-saraiva1/'.</msg>
+<arg>https://www.linkedin.com/in/pedro-saraiva1/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-08T19:20:23.916491" elapsed="2.862761"/>
+</kw>
+<status status="PASS" start="2026-02-08T19:20:23.915810" elapsed="2.863723"/>
+</kw>
+<kw name="pausar por 5 segundos">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-08T19:20:31.782909" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-08T19:20:26.781264" elapsed="5.002006"/>
+</kw>
+<status status="PASS" start="2026-02-08T19:20:26.780450" elapsed="5.003306"/>
+</kw>
+<status status="PASS" start="2026-02-08T19:20:23.914921" elapsed="7.869727"/>
+</test>
+<status status="PASS" start="2026-02-08T19:20:15.065955" elapsed="16.720950"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Aprendizado" id="s1" pass="2" fail="0" skip="0">Aprendizado</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
