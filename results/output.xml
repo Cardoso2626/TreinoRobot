@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.3 on win32)" generated="2026-02-10T20:37:43.739798" rpa="false" schemaversion="5">
+<suite id="s1" name="aulaRobot" source="C:\Users\pedro\OneDrive\Área de Trabalho\aulaRobot">
+<suite id="s1-s1" name="Form" source="C:\Users\pedro\OneDrive\Área de Trabalho\aulaRobot\form.robot">
+<test id="s1-s1-t1" name="Cenário 1: Preencher formulário" line="27">
+<kw name="abrir navegador e acessar site">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-10T20:37:44.175670" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/?stype=lo&amp;flo=1&amp;deoia=1&amp;jlou=AfhMwwlbz3Mvfgjl9FRiZKS9xGZglQnIBiwcF8WYYmPZbDjQKDl2oRQ2z7js0ecoToRgXvMpbFsGiKlIxP4GoKTPoUopCb0dUHvXs_3PXjM5qg&amp;smuh=43330&amp;lh=AdAiEQsTpGbEttI-sQQ'.</msg>
+<arg>https://www.facebook.com/?stype=lo&amp;flo=1&amp;deoia=1&amp;jlou=AfhMwwlbz3Mvfgjl9FRiZKS9xGZglQnIBiwcF8WYYmPZbDjQKDl2oRQ2z7js0ecoToRgXvMpbFsGiKlIxP4GoKTPoUopCb0dUHvXs_3PXjM5qg&amp;smuh=43330&amp;lh=AdAiEQsTpGbEttI-sQQ</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-10T20:37:44.175133" elapsed="2.481473"/>
+</kw>
+<status status="PASS" start="2026-02-10T20:37:44.173674" elapsed="2.484411"/>
+</kw>
+<kw name="preencher campos">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-10T20:37:46.661459" level="INFO">Typing text 'phcs_saraiva@hotmail.com' into text field 'id:email'.</msg>
+<arg>${input_email}</arg>
+<arg>phcs_saraiva@hotmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-10T20:37:46.660337" elapsed="0.175916"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-10T20:37:46.838652" level="INFO">Typing text 'louco12' into text field 'id:pass'.</msg>
+<arg>${input_senha}</arg>
+<arg>louco12</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-10T20:37:46.836907" elapsed="0.350881"/>
+</kw>
+<status status="PASS" start="2026-02-10T20:37:46.659031" elapsed="0.529394"/>
+</kw>
+<kw name="clicar em submit">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-10T20:37:47.192357" level="INFO">Clicking element 'name:login'.</msg>
+<arg>${button_submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-10T20:37:47.191157" elapsed="0.227226"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-10T20:39:07.422999" level="INFO">Slept 1 minute 20 seconds.</msg>
+<arg>80s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-10T20:37:47.419357" elapsed="80.004343"/>
+</kw>
+<status status="PASS" start="2026-02-10T20:37:47.189402" elapsed="80.234656"/>
+</kw>
+<kw name="fechar navegador">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-10T20:39:07.427466" elapsed="2.531473"/>
+</kw>
+<status status="PASS" start="2026-02-10T20:39:07.425094" elapsed="2.534306"/>
+</kw>
+<status status="PASS" start="2026-02-10T20:37:44.165774" elapsed="85.794749"/>
+</test>
+<status status="PASS" start="2026-02-10T20:37:43.909310" elapsed="86.079244"/>
+</suite>
+<status status="PASS" start="2026-02-10T20:37:43.778398" elapsed="86.219941"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="aulaRobot" id="s1" pass="1" fail="0" skip="0">aulaRobot</stat>
+<stat name="Form" id="s1-s1" pass="1" fail="0" skip="0">aulaRobot.Form</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

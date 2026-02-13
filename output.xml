@@ -1,60 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.14.3 on win32)" generated="2026-02-08T19:20:15.062661" rpa="false" schemaversion="5">
-<suite id="s1" name="Aprendizado" source="C:\Users\pedro\OneDrive\Área de Trabalho\aulaRobot\aprendizado.robot">
-<test id="s1-t1" name="Cenario 1: teste de abrir site google" line="18">
-<kw name="abrir site do google">
+<robot generator="Robot 7.4.1 (Python 3.14.3 on win32)" generated="2026-02-10T20:49:42.212327" rpa="false" schemaversion="5">
+<suite id="s1" name="Form" source="C:\Users\pedro\OneDrive\Área de Trabalho\aulaRobot\form.robot">
+<test id="s1-t1" name="Cenário 1: Preencher formulário" line="27">
+<kw name="abrir navegador e acessar site">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-02-08T19:20:15.588140" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/search?q=google&amp;oq=google&amp;gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg7MgYIAhBFGDsyBggDEEUYPDIGCAQQRRg8MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEHNTkyajBqN6gCCLACAfEFnzwVwAdjC40&amp;sourceid=chrome&amp;ie=UTF-8'.</msg>
-<arg>https://www.google.com/search?q=google&amp;oq=google&amp;gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg7MgYIAhBFGDsyBggDEEUYPDIGCAQQRRg8MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEHNTkyajBqN6gCCLACAfEFnzwVwAdjC40&amp;sourceid=chrome&amp;ie=UTF-8</arg>
+<msg time="2026-02-10T20:49:42.477010" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/'.</msg>
+<arg>https://www.facebook.com/</arg>
 <arg>chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-02-08T19:20:15.587803" elapsed="3.319495"/>
+<status status="PASS" start="2026-02-10T20:49:42.476834" elapsed="3.211671"/>
 </kw>
-<status status="PASS" start="2026-02-08T19:20:15.586857" elapsed="3.321054"/>
+<status status="PASS" start="2026-02-10T20:49:42.476214" elapsed="3.212595"/>
 </kw>
-<kw name="pausar por 5 segundos">
+<kw name="preencher campos">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-10T20:49:45.690715" level="INFO">Typing text 'phcs_saraivahotmail.com' into text field 'id:email'.</msg>
+<arg>${input_email}</arg>
+<arg>phcs_saraivahotmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-10T20:49:45.690230" elapsed="0.168268"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-10T20:49:45.859402" level="INFO">Typing text 'lou' into text field 'id:pass'.</msg>
+<arg>${input_senha}</arg>
+<arg>lou</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-10T20:49:45.858933" elapsed="0.138582"/>
+</kw>
+<status status="PASS" start="2026-02-10T20:49:45.689718" elapsed="0.308027"/>
+</kw>
+<kw name="clicar em submit">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-10T20:49:46.000772" level="INFO">Clicking element 'name:login'.</msg>
+<arg>${button_submit}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-10T20:49:45.999552" elapsed="0.156531"/>
+</kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-02-08T19:20:23.912482" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
+<msg time="2026-02-10T20:49:56.158178" level="INFO">Slept 10 seconds.</msg>
+<arg>1 0s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-02-08T19:20:18.910390" elapsed="5.002421"/>
+<status status="PASS" start="2026-02-10T20:49:46.156367" elapsed="10.002037"/>
 </kw>
-<status status="PASS" start="2026-02-08T19:20:18.909134" elapsed="5.003947"/>
+<status status="PASS" start="2026-02-10T20:49:45.998343" elapsed="10.160247"/>
 </kw>
-<status status="PASS" start="2026-02-08T19:20:15.585646" elapsed="8.328238"/>
+<kw name="fechar navegador">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-10T20:49:56.159866" elapsed="2.267632"/>
+</kw>
+<status status="PASS" start="2026-02-10T20:49:56.159426" elapsed="2.268247"/>
+</kw>
+<status status="PASS" start="2026-02-10T20:49:42.475303" elapsed="15.952972"/>
 </test>
-<test id="s1-t2" name="Cenario 2: teste de abrir linkedIn" line="21">
-<kw name="abrir o site do linkedIn">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-02-08T19:20:23.917359" level="INFO">Opening browser 'chrome' to base url 'https://www.linkedin.com/in/pedro-saraiva1/'.</msg>
-<arg>https://www.linkedin.com/in/pedro-saraiva1/</arg>
-<arg>chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-02-08T19:20:23.916491" elapsed="2.862761"/>
-</kw>
-<status status="PASS" start="2026-02-08T19:20:23.915810" elapsed="2.863723"/>
-</kw>
-<kw name="pausar por 5 segundos">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2026-02-08T19:20:31.782909" level="INFO">Slept 5 seconds.</msg>
-<arg>5s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-02-08T19:20:26.781264" elapsed="5.002006"/>
-</kw>
-<status status="PASS" start="2026-02-08T19:20:26.780450" elapsed="5.003306"/>
-</kw>
-<status status="PASS" start="2026-02-08T19:20:23.914921" elapsed="7.869727"/>
-</test>
-<status status="PASS" start="2026-02-08T19:20:15.065955" elapsed="16.720950"/>
+<status status="PASS" start="2026-02-10T20:49:42.213915" elapsed="16.215713"/>
 </suite>
 <statistics>
 <total>
-<stat pass="2" fail="0" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat name="Aprendizado" id="s1" pass="2" fail="0" skip="0">Aprendizado</stat>
+<stat name="Form" id="s1" pass="1" fail="0" skip="0">Form</stat>
 </suite>
 </statistics>
 <errors>
