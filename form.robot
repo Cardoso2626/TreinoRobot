@@ -3,17 +3,17 @@ Library    SeleniumLibrary
 
 *** Variables ***
 
-${input_email}    id:email
+${input_email}    //input[@id="email"]
 
-${input_senha}    id:pass
+${input_senha}    //input[@id="pass"]
 
-${button_submit}    name:login 
+${button_submit}    //button[@name="login"] 
 *** Keywords ***
 abrir navegador e acessar site
     Open Browser    https://www.facebook.com/    chrome
 
 preencher campos
-    Input Text    ${input_email}    phcs_saraivahotmail.com
+    Input Text    ${input_email}    phcs_saraiva@hotmail.com
     Input Text    ${input_senha}    lou
 
 clicar em submit 
