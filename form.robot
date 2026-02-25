@@ -29,6 +29,4 @@ Cenário 1: Preencher formulário
     preencher campos
     clicar em submit 
     fechar navegador
-
-
-
+ 

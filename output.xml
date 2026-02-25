@@ -1,59 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.14.3 on win32)" generated="2026-02-18T11:53:50.556009" rpa="false" schemaversion="5">
-<suite id="s1" name="Form" source="C:\Users\pedro\OneDrive\Área de Trabalho\aulaRobot\form.robot">
-<test id="s1-t1" name="Cenário 1: Preencher formulário" line="27">
-<kw name="abrir navegador e acessar site">
+<robot generator="Robot 7.4.1 (Python 3.14.3 on win32)" generated="2026-02-24T11:50:28.567514" rpa="false" schemaversion="5">
+<suite id="s1" name="Bdd" source="C:\Users\pedro\OneDrive\Área de Trabalho\aulaRobot\bdd.robot">
+<test id="s1-t1" name="Cenario 1: Executar vídeo no site do youtube" line="40">
+<kw name="Dado que eu acesso o site do youtube">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-02-18T11:53:50.875159" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/'.</msg>
-<arg>https://www.facebook.com/</arg>
-<arg>chrome</arg>
+<msg time="2026-02-24T11:50:28.983081" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-02-18T11:53:50.874928" elapsed="2.314475"/>
+<status status="PASS" start="2026-02-24T11:50:28.982789" elapsed="7.511639"/>
 </kw>
-<status status="PASS" start="2026-02-18T11:53:50.873955" elapsed="2.316139"/>
+<status status="PASS" start="2026-02-24T11:50:28.982053" elapsed="7.513371"/>
 </kw>
-<kw name="preencher campos">
+<kw name="Quando digito o nome da música">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-02-18T11:53:53.193762" level="INFO">Typing text 'phcs_saraiva@hotmail.com' into text field '//input[@id="email"]'.</msg>
-<arg>${input_email}</arg>
-<arg>phcs_saraiva@hotmail.com</arg>
+<msg time="2026-02-24T11:50:36.501084" level="INFO">Typing text 'Travis Scott Astrothunder' into text field '//input[@name="search_query"]'.</msg>
+<arg>${InputPesquisa}</arg>
+<arg>${NomeDaMusica}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-18T11:53:53.192324" elapsed="0.331313"/>
+<status status="PASS" start="2026-02-24T11:50:36.498880" elapsed="1.573982"/>
 </kw>
-<kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2026-02-18T11:53:53.526283" level="INFO">Typing text 'lou' into text field '//input[@id="pass"]'.</msg>
-<arg>${input_senha}</arg>
-<arg>lou</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-18T11:53:53.524452" elapsed="0.188102"/>
+<status status="PASS" start="2026-02-24T11:50:36.497117" elapsed="1.576595"/>
 </kw>
-<status status="PASS" start="2026-02-18T11:53:53.191382" elapsed="0.521389"/>
-</kw>
-<kw name="clicar em submit">
+<kw name="E clico no botão buscar">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2026-02-18T11:53:53.714606" level="INFO">Clicking element '//button[@name="login"]'.</msg>
-<arg>${button_submit}</arg>
+<msg time="2026-02-24T11:50:38.078259" level="INFO">Clicking element '//button[@title="Pesquisar"]'.</msg>
+<arg>${ButtonSearch}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2026-02-18T11:53:53.714135" elapsed="0.152083"/>
+<status status="PASS" start="2026-02-24T11:50:38.076868" elapsed="1.236981"/>
+</kw>
+<status status="PASS" start="2026-02-24T11:50:38.075533" elapsed="1.239375"/>
+</kw>
+<kw name="E clico na primra opção da lista">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${PrimeiraOpcao}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-24T11:50:39.318089" elapsed="1.635068"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-24T11:50:40.954592" level="INFO">Clicking element '//img[@src="https://i.ytimg.com/vi/Pa67b28h0vY/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&amp;rs=AOn4CLBsn7zJT78DwwK1R68wvq9V8rL4JQ"]'.</msg>
+<arg>${PrimeiraOpcao}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-24T11:50:40.953780" elapsed="0.870130"/>
+</kw>
+<status status="PASS" start="2026-02-24T11:50:39.316876" elapsed="2.507319"/>
+</kw>
+<kw name="Então o vídeo é executado">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Prova}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-24T11:50:41.825602" elapsed="3.430194"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-24T11:50:45.514975" level="INFO">Element '//div[@id="actions-inner"]' is displayed.</msg>
+<arg>${Prova}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-24T11:50:45.257096" elapsed="0.258068"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2026-02-18T11:54:03.869736" level="INFO">Slept 10 seconds.</msg>
-<arg>1 0s</arg>
+<msg time="2026-02-24T11:51:00.517081" level="INFO">Slept 15 seconds.</msg>
+<arg>15s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2026-02-18T11:53:53.866687" elapsed="10.003265"/>
+<status status="PASS" start="2026-02-24T11:50:45.515423" elapsed="15.002216"/>
 </kw>
-<status status="PASS" start="2026-02-18T11:53:53.713673" elapsed="10.156441"/>
+<status status="PASS" start="2026-02-24T11:50:41.824923" elapsed="18.693141"/>
 </kw>
-<kw name="fechar navegador">
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="PASS" start="2026-02-18T11:54:03.871144" elapsed="2.392306"/>
-</kw>
-<status status="PASS" start="2026-02-18T11:54:03.870650" elapsed="2.392906"/>
-</kw>
-<status status="PASS" start="2026-02-18T11:53:50.873352" elapsed="15.390591"/>
+<status status="PASS" start="2026-02-24T11:50:28.981121" elapsed="31.537871"/>
 </test>
-<status status="PASS" start="2026-02-18T11:53:50.558829" elapsed="15.706205"/>
+<status status="PASS" start="2026-02-24T11:50:28.573208" elapsed="31.947604"/>
 </suite>
 <statistics>
 <total>
@@ -62,7 +78,7 @@
 <tag>
 </tag>
 <suite>
-<stat name="Form" id="s1" pass="1" fail="0" skip="0">Form</stat>
+<stat name="Bdd" id="s1" pass="1" fail="0" skip="0">Bdd</stat>
 </suite>
 </statistics>
 <errors>
