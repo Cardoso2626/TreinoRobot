@@ -16,6 +16,7 @@ abrir o site do linkedIn
 *** Test Cases ***
 
 Cenario 1: teste de abrir site google
+    [Tags]  Regressivo
     abrir site do google 
     pausar por 5 segundos
 Cenario 2: teste de abrir linkedIn

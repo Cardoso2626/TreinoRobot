@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.14.3 on win32)" generated="2026-02-25T13:30:18.526955" rpa="false" schemaversion="5">
+<suite id="s1" name="Testes" source="C:\Users\pedro\OneDrive\Área de Trabalho\aulaRobot\testes">
+<suite id="s1-s1" name="Aprendizado" source="C:\Users\pedro\OneDrive\Área de Trabalho\aulaRobot\testes\aprendizado.robot">
+<test id="s1-s1-t1" name="Cenario 1: teste de abrir site google" line="18">
+<kw name="abrir site do google">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-25T13:30:18.855319" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/search?q=google&amp;oq=google&amp;gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg7MgYIAhBFGDsyBggDEEUYPDIGCAQQRRg8MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEHNTkyajBqN6gCCLACAfEFnzwVwAdjC40&amp;sourceid=chrome&amp;ie=UTF-8'.</msg>
+<arg>https://www.google.com/search?q=google&amp;oq=google&amp;gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIGCAEQRRg7MgYIAhBFGDsyBggDEEUYPDIGCAQQRRg8MgYIBRBFGDwyBggGEEUYPDIGCAcQRRg80gEHNTkyajBqN6gCCLACAfEFnzwVwAdjC40&amp;sourceid=chrome&amp;ie=UTF-8</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-25T13:30:18.854947" elapsed="3.569980"/>
+</kw>
+<status status="PASS" start="2026-02-25T13:30:18.853662" elapsed="3.571590"/>
+</kw>
+<kw name="pausar por 5 segundos">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-25T13:30:27.428767" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-25T13:30:22.426833" elapsed="5.002292"/>
+</kw>
+<status status="PASS" start="2026-02-25T13:30:22.426130" elapsed="5.003248"/>
+</kw>
+<status status="PASS" start="2026-02-25T13:30:18.852725" elapsed="8.577271"/>
+</test>
+<test id="s1-s1-t2" name="Cenario 2: teste de abrir linkedIn" line="21">
+<kw name="abrir o site do linkedIn">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-25T13:30:27.432686" level="INFO">Opening browser 'chrome' to base url 'https://www.linkedin.com/in/pedro-saraiva1/'.</msg>
+<arg>https://www.linkedin.com/in/pedro-saraiva1/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-25T13:30:27.432375" elapsed="2.418081"/>
+</kw>
+<status status="PASS" start="2026-02-25T13:30:27.431953" elapsed="2.419338"/>
+</kw>
+<kw name="pausar por 5 segundos">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-25T13:30:34.855740" level="INFO">Slept 5 seconds.</msg>
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-25T13:30:29.853875" elapsed="5.002113"/>
+</kw>
+<status status="PASS" start="2026-02-25T13:30:29.852574" elapsed="5.003625"/>
+</kw>
+<status status="PASS" start="2026-02-25T13:30:27.431149" elapsed="7.425628"/>
+</test>
+<status status="PASS" start="2026-02-25T13:30:18.581000" elapsed="16.277561"/>
+</suite>
+<suite id="s1-s2" name="Bdd" source="C:\Users\pedro\OneDrive\Área de Trabalho\aulaRobot\testes\bdd.robot">
+<test id="s1-s2-t1" name="Cenario 1: Executar vídeo no site do youtube" line="40">
+<kw name="Dado que eu acesso o site do youtube">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-25T13:30:34.870394" level="INFO">Opening browser 'chrome' to base url 'https://www.youtube.com/'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-25T13:30:34.869551" elapsed="8.937582"/>
+</kw>
+<status status="PASS" start="2026-02-25T13:30:34.868911" elapsed="8.939011"/>
+</kw>
+<kw name="Quando digito o nome da música">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-25T13:30:43.813355" level="INFO">Typing text 'Travis Scott Astrothunder' into text field '//input[@name="search_query"]'.</msg>
+<arg>${InputPesquisa}</arg>
+<arg>${NomeDaMusica}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-25T13:30:43.810931" elapsed="1.663983"/>
+</kw>
+<status status="PASS" start="2026-02-25T13:30:43.809629" elapsed="1.665770"/>
+</kw>
+<kw name="E clico no botão buscar">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-25T13:30:45.478674" level="INFO">Clicking element '//button[@title="Pesquisar"]'.</msg>
+<arg>${ButtonSearch}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-25T13:30:45.477835" elapsed="0.322873"/>
+</kw>
+<status status="PASS" start="2026-02-25T13:30:45.476649" elapsed="0.324629"/>
+</kw>
+<kw name="E clico na primra opção da lista">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${PrimeiraOpcao}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-25T13:30:45.803220" elapsed="2.138073"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-25T13:30:47.942690" level="INFO">Clicking element '//img[@src="https://i.ytimg.com/vi/Pa67b28h0vY/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&amp;rs=AOn4CLBsn7zJT78DwwK1R68wvq9V8rL4JQ"]'.</msg>
+<arg>${PrimeiraOpcao}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-25T13:30:47.941864" elapsed="0.979106"/>
+</kw>
+<status status="PASS" start="2026-02-25T13:30:45.802373" elapsed="3.118992"/>
+</kw>
+<kw name="Então o vídeo é executado">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${Prova}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-25T13:30:48.924212" elapsed="3.535502"/>
+</kw>
+<kw name="Element Should Be Visible" owner="SeleniumLibrary">
+<msg time="2026-02-25T13:30:52.790469" level="INFO">Element '//div[@id="actions-inner"]' is displayed.</msg>
+<arg>${Prova}</arg>
+<doc>Verifies that the element identified by ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-25T13:30:52.461513" elapsed="0.329298"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2026-02-25T13:31:07.792857" level="INFO">Slept 15 seconds.</msg>
+<arg>15s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2026-02-25T13:30:52.791288" elapsed="15.001811"/>
+</kw>
+<status status="PASS" start="2026-02-25T13:30:48.923024" elapsed="18.870457"/>
+</kw>
+<status status="PASS" start="2026-02-25T13:30:34.867900" elapsed="32.926218"/>
+</test>
+<status status="PASS" start="2026-02-25T13:30:34.860811" elapsed="32.935240"/>
+</suite>
+<suite id="s1-s3" name="Form" source="C:\Users\pedro\OneDrive\Área de Trabalho\aulaRobot\testes\form.robot">
+<test id="s1-s3-t1" name="Cenário 1: Preencher formulário" line="27">
+<kw name="abrir navegador e acessar site">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-25T13:31:07.806626" level="INFO">Opening browser 'chrome' to base url 'https://www.facebook.com/'.</msg>
+<arg>https://www.facebook.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-25T13:31:07.806045" elapsed="5.206257"/>
+</kw>
+<status status="PASS" start="2026-02-25T13:31:07.805506" elapsed="5.207337"/>
+</kw>
+<kw name="preencher campos">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-25T13:31:13.016716" level="INFO">Typing text 'phcs_saraiva@hotmail.com' into text field '//input[@id="email"]'.</msg>
+<msg time="2026-02-25T13:31:13.274988" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-25T13:31:13.286038" level="FAIL">Element with locator '//input[@id="email"]' not found.</msg>
+<arg>${input_email}</arg>
+<arg>phcs_saraiva@hotmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-25T13:31:13.015563" elapsed="0.300382">Element with locator '//input[@id="email"]' not found.</status>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<arg>${input_senha}</arg>
+<arg>lou</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="NOT RUN" start="2026-02-25T13:31:13.319055" elapsed="0.000108"/>
+</kw>
+<status status="FAIL" start="2026-02-25T13:31:13.013995" elapsed="0.306035">Element with locator '//input[@id="email"]' not found.</status>
+</kw>
+<kw name="clicar em submit">
+<status status="NOT RUN" start="2026-02-25T13:31:13.321203" elapsed="0.000154"/>
+</kw>
+<kw name="fechar navegador">
+<status status="NOT RUN" start="2026-02-25T13:31:13.322745" elapsed="0.000105"/>
+</kw>
+<status status="FAIL" start="2026-02-25T13:31:07.804172" elapsed="5.519535">Element with locator '//input[@id="email"]' not found.</status>
+</test>
+<status status="FAIL" start="2026-02-25T13:31:07.797345" elapsed="5.528567"/>
+</suite>
+<status status="FAIL" start="2026-02-25T13:30:18.530758" elapsed="54.796870"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Testes" id="s1" pass="3" fail="1" skip="0">Testes</stat>
+<stat name="Aprendizado" id="s1-s1" pass="2" fail="0" skip="0">Testes.Aprendizado</stat>
+<stat name="Bdd" id="s1-s2" pass="1" fail="0" skip="0">Testes.Bdd</stat>
+<stat name="Form" id="s1-s3" pass="0" fail="1" skip="0">Testes.Form</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
